@@ -362,25 +362,26 @@ int main()
     // cout << sum << endl;
 
     // FIND FACTORIAL OF N
-    int n;
-    cin >> n;
+    // int n;
+    // cin >> n;
 
-    int result = 1;
+    // int result = 1;
 
-    int i;
+    // int i;
 
-    for (i = n; i >= 1; i--)
-    {
-        result *= i;
-    }
+    // for (i = n; i >= 1; i--)
+    // {
+    //     result *= i;
+    // }
 
-    cout << result << endl;
+    // cout << result << endl;
 
     //CONVERT BINARY INTO DECIMAL  
 
 
 
     //function
+    
      
 
     
