@@ -376,15 +376,16 @@ int main()
 
     // cout << result << endl;
 
-    //CONVERT BINARY INTO DECIMAL  
+    // CONVERT BINARY INTO DECIMAL
 
-
-
-    //function
-    
-     
-
-    
+    // function
+    //  int sum (int a, int b){
+    //      return a+b;
+    //  };
+    int a, b;
+    cin >> a >> b;
+    cout << "sum"
+         << " = " << (a + b) << endl;
 
     return 0;
 }
