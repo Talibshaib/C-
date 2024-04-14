@@ -1,6 +1,32 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 using namespace std;
+
+// int sum(int a, int b); // THIS TYPE OF DECLEARING OF FUNCTION KNOWN AS (FUNCTION PROTOTYPING)
+// void print();
+// int factorial(int n);
+
+// int changevalue(int a) // PASS BY VALUE PASS BY REFRENCE (https://g.co/gemini/share/9d5e301ced80)
+// {
+//     a = 500;
+//     // cout << "function value : " << a << endl;
+//     return a;
+// }
+
+// void modifier(int &p)
+// {
+//     p = 100;
+//     cout << "value of function : " << p << endl;
+//     cout << "value of memory location : " << &p << endl;
+// }
+
+// // DEFAULT PARAMETER
+// int sum(int a, int b, int c = 10)
+// {
+//     int result = (a + b + c);
+//     return result;
+// }
 
 int main()
 {
@@ -379,13 +405,256 @@ int main()
     // CONVERT BINARY INTO DECIMAL
 
     // function
-    //  int sum (int a, int b){
-    //      return a+b;
-    //  };
-    int a, b;
-    cin >> a >> b;
-    cout << "sum"
-         << " = " << (a + b) << endl;
+    // cout << sum(2, 3) << endl;
+    // print();
+    // int aqrt = sqrt(4);
+    // int power = pow(2, 3);
+    // cout << aqrt << endl;
+    // cout << power << endl;
+    // cout << factorial(4) << endl;
+
+    // PASS BY VALUE.
+
+    // int b = 30;
+
+    // cout << "before function call : " << b << endl;
+    // cout << changevalue(b) << endl;
+    // cout << "after function call : " << b << endl;
+
+    // PASS BY REFRENCE.
+
+    // int q = 300;
+    // cout << "value of p before function call : " << q << endl;
+    // modifier(q);
+    // cout << "value of p before function call : " << q << endl;
+    // cout << "value of p memory location of Q : " << &q << endl;
+
+    // DEFAULT PARAMETER
+
+    // cout << sum(20, 20) << endl;      // 50
+    // cout << sum(20, 20, 100) << endl; // 140
+
+    // ARRAY.............................
+
+    // int array[8];
+    // array[1] = 40;
+    // array[0] = 20;
+    // array[2] = 10;
+    // array[3] = 10;
+    // array[4] = 10;
+    // array[5] = 10;
+    // array[6] = 60;
+    // array[7] = 70;
+
+    // cout << array[4] << endl;
+    // char wovel[5];
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin >> wovel[i];
+    // }
+    // for (char ele : wovel)
+    // {
+    //     cout << ele << " ";
+    // }
+
+    // SUM OF ARRAY
+
+    // int arrySum[5];
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin >> arrySum[i];
+    // }
+
+    // int sum = 0;
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     sum += arrySum[i];
+    // }
+    // cout << sum << endl;
+
+    // MAX ELEMENT OF ARRAY
+    // int arryMax[5];
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin >> arryMax[i];
+    // }
+
+    // int maxNum = arryMax[0];
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     int num = 0;
+    //     num = arryMax[i];
+    //     if (num > maxNum)
+    //     {
+    //         maxNum = num;
+    //     }
+    // }
+    // cout << maxNum << endl;
+
+    // LINEAR SEARCH
+
+    // int arraylin[] = {3, 4, 6, 8, 1, 9};
+    // int size = sizeof(arraylin) / sizeof(arraylin[0]);
+
+    // int key;
+    // cin >> key;
+
+    // int ans = -1;
+
+    // for (int i = 0; i < size; i++)
+    // {
+    //     if (arraylin[i] == key)
+
+    //     {
+    //         ans = i;
+    //     }
+    // }
+    // cout << "location is : " << ans << endl;
+
+    // VECTOR (DYNAMIC ARRAYS--RESIZE WHEN INSERT / DELETE ELEMENT)
+    // vector<int> v2;
+    // for (int i = 0; i < 5; i++) // WHEN SIZE NOT DEFINE
+    // {
+    //     int element;
+    //     cin >> element;
+    //     v2.push_back(element);
+    // };
+    // for (int i = 0; i < v2.size(); i++)
+    // {
+    //     cout << "for loop : " << v2[i] << endl;
+    // }
+    // for (int el : v2) // FOR EACH LOOP
+    // {
+    //     cout << "for each loop : " << el << endl;
+    // }
+    // int i = 0; // WHILE LOOP
+    // while (i < v2.size())
+    // {
+    //     cout << "while loop :" << v2[i] << endl;
+    //     i++;
+    // }
+
+    // vector<int> v3 = {40, 50, 36, 28, 45}; // DECLEARATION ANS ASIGN VALUE AT SAME TIME
+    // v3.insert(v3.begin(), 30);
+    // cout << "size of v3 : " << v3.size() << endl;
+    // cout << "capa of v3 : " << v3.capacity() << endl;
+    // for (int re : v3)
+    // {
+    //     cout << re << endl;
+    // }
+    // vector<int> myvec; // DECLEARING AND ASSIGNING VALUE AT DIFF POINT
+    // myvec.assign({34, 56, 78, 0, 70, 90});
+    // myvec.erase(myvec.begin() + 2);
+
+    // for (int re : myvec)
+    // {
+    //     cout << "result : " << re << endl;
+    // }
+
+    // find the last occurence and count the occurence of given value in given array
+
+    // vector<int> my_vec = {1, 4, 8, 3, 7, 1, 8, 1};
+    // int size = my_vec.size();
+    // int key;
+    // cout << "enter key value" << endl;
+    // cin >> key;
+    // int count = 0;
+    // int occurence = -1;
+    // for (int i = 0; i < size; i++)
+    // {
+    //     if (my_vec[i] == key)
+    //     {
+    //         occurence = i;
+    //         count++;
+    //     }
+    // }
+    // cout << "last occurence of kery is : " << occurence << endl;
+    // cout << "count of the kery is : " << count << endl;
+
+    // count the number of element strictly greater then the key value
+
+    // vector<int> my_vec2 = {10, 20, 40, 30, 60, 100};
+
+    // int count = 0;
+    // vector<int> s_gre;
+    // int key;
+    // cin >> key;
+
+    // for (int i = 0; i < my_vec2.size(); i++)
+    // {
+    //     if (my_vec2[i] > key)
+    //     {
+    //         s_gre.push_back(my_vec2[i]);
+    //         count++;
+    //     }
+    //     else
+    //     {
+    //         s_gre.push_back(0);
+    //     }
+    // }
+    // for (int re : s_gre)
+    // {
+
+    //     cout << re << " ";
+    // }
+    // cout << endl;
+    // cout << "count of strektly greater number of :" << count << endl;
+
+    // check array sorted or not
+    vector<int> s_vec(5);
+    for (int i = 0; i < s_vec.size(); i++)
+    {
+        cin >> s_vec[i];
+    }
+    bool sorted = true;
+    for (int i = 1; i < s_vec.size(); i++)
+    {
+        if (s_vec[i] <= s_vec[i - 1])
+        {
+            sorted = false;
+            break;
+        }
+    }
+    cout << "result is : " << sorted << endl;
+
+    // vector<int> vec(6);
+    // int size = vec.size();
+    // for (int i = 0; i < size; i++) //WHEN SIZE DEFINE
+    // {
+    //     cin >> vec[i];
+    //     cout << "memory location of input : " << &vec[i] << endl;
+    // }
+
+    // for (int i = 0; i < vec.size(); i++)
+    // {
+    //     cout << "output : " << vec[i] << endl;
+    //     cout << "memory location of output : " << &vec[i] << endl;
+    // }
 
     return 0;
 }
+// fUNCTION
+// int sum(int a, int b) // SUM FUNCTION FOR FINDING SUM
+// {
+//
+// int sum = a + b;
+//
+// return sum;
+// };
+// void print() // VOID THAT RETURN NOTHING ONLY PRINT
+// {
+// cout << "hello world" << endl;
+// return;
+// };
+// int factorial(int n) // FUNCTION FOR FINDING FACTORIAL
+// {
+// int result = 1;
+// for (int i = 1; i <= n; i++)
+// {
+// result *= i;
+// }
+//
+// return result;
+// }
