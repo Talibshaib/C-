@@ -552,6 +552,19 @@ int main()
     // {
     //     cout << "result : " << re << endl;
     // }
+    // vector<int> vec(6);
+    // int size = vec.size();
+    // for (int i = 0; i < size; i++) //WHEN SIZE DEFINE
+    // {
+    //     cin >> vec[i];
+    //     cout << "memory location of input : " << &vec[i] << endl;
+    // }
+
+    // for (int i = 0; i < vec.size(); i++)
+    // {
+    //     cout << "output : " << vec[i] << endl;
+    //     cout << "memory location of output : " << &vec[i] << endl;
+    // }
 
     // find the last occurence and count the occurence of given value in given array
 
@@ -603,35 +616,225 @@ int main()
     // cout << "count of strektly greater number of :" << count << endl;
 
     // check array sorted or not
-    vector<int> s_vec(5);
-    for (int i = 0; i < s_vec.size(); i++)
+    // vector<int> s_vec(5);
+    // for (int i = 0; i < s_vec.size(); i++)
+    // {
+    //     cin >> s_vec[i];
+    // }
+    // bool sorted = true;
+    // for (int i = 1; i < s_vec.size(); i++)
+    // {
+    //     if (s_vec[i] < s_vec[i - 1])
+    //     {
+    //         sorted = false;
+    //         break;
+    //     }
+    // }
+    // cout << "result is : " << sorted << endl;
+
+    // add and subtract odd and even indecias
+
+    // vector<int> my_vec4(4);
+
+    // cout << "Give me the input : " << endl;
+    // for (int i = 0; i < my_vec4.size(); i++)
+    // {
+    //     cin >> my_vec4[i];
+    // }
+
+    // int sum = 0;
+    // for (int i = 0; i < my_vec4.size(); i++)
+    // {
+    //     if (i % 2 == 0)
+    //     {
+    //         sum += my_vec4[i];
+    //     }
+    //     else
+    //     {
+    //         sum -= my_vec4[i];
+    //     }
+    // }
+    // cout << "final value is :" << sum << endl;
+
+    // find the total number of pair in the Array whose sum is equal to the given value x.
+
+    // vector<int> pair_vec(4);
+    // cout << "enter the index value of vector :" << endl;
+    // for (int i = 0; i < pair_vec.size(); i++)
+    // {
+    //     cin >> pair_vec[i];
+    // }
+
+    // int key;
+    // cout << "Enter the key value : " << endl;
+    // cin >> key;
+
+    // int pair = 0;
+
+    //     for (int i = 0; i < pair_vec.size(); i++)
+    // {
+    //     for (int j = i; j < pair_vec.size(); j++)
+    //     {
+    //         if (pair_vec[i] + pair_vec[j] == key)
+    //         {
+    //             pair++;
+    //         }
+    //     }
+    // }
+    // cout << "Total count : " << pair << endl;
+
+    // count the number of triplet whose sum is equal to the given value x.
+
+    // vector<int> pair_vec(6);
+    // cout << "enter the index value of vector :" << endl;
+    // for (int i = 0; i < pair_vec.size(); i++)
+    // {
+    //     cin >> pair_vec[i];
+    // }
+
+    // int key;
+    // cout << "Enter the key value : " << endl;
+    // cin >> key;
+
+    // int pair = 0;
+
+    // for (int i = 0; i < pair_vec.size(); i++)
+    // {
+    //     for (int j = i + 1; j < pair_vec.size(); j++)
+    //     {
+    //         for (int k = j + 1; k < pair_vec.size(); k++)
+    //         {
+
+    //             if (pair_vec[i] + pair_vec[j] + pair_vec[k] == key)
+    //             {
+    //                 pair++;
+    //             }
+    //         }
+    //     }
+    // }
+    // cout << "Total count : " << pair << endl;
+
+    // find the second largest number in the given Array.
+
+    // int my_array[] = {3, 4, 7, 5, 9, 1, 7};
+    // int size = sizeof(my_array) / sizeof(my_array[0]);
+    // cout << size << endl;
+
+    // int highestIn = 0;
+    // int sec_highIn = 0;
+
+    // for (int i = 1; i < size; i++)
+    // {
+    //     if (my_array[i] > my_array[highestIn])
+    //     {
+    //         sec_highIn = highestIn;
+    //         highestIn = i;
+    //     }
+    //     else if (my_array[i] > my_array[highestIn] && i != sec_highIn)
+    //     {
+    //         sec_highIn = i;
+    //     }
+    // }
+    // cout << "Highest value = " << my_array[highestIn] << endl;
+    // cout << "sec Highest value = " << my_array[sec_highIn] << endl;
+
+    // ROTATE THE ARRAY A BY K STEPS , K IS NON-NEGATIVE.
+
+    // SORT AN ARRAY CONSISTING OF ONLY 0s AND 1s
+
+    // int my_arr[5];
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin >> my_arr[i];
+    // };
+
+    // int count = 0;
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     if (my_arr[i] == 0)
+    //     {
+    //         count++;
+    //     }
+    // }
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     if (i < count)
+    //     {
+    //         my_arr[i] = 0;
+    //     }
+    //     else
+    //     {
+    //         my_arr[i] = 1;
+    //     }
+    // }
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << my_arr[i] << " ";
+    // }
+    // cout << endl;
+
+    // SORTING Os AND 1s WITH SINGLE LOOP (with help of two pointer)
+
+    // vector<int> v(5);
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin >> v[i];
+    // }
+
+    // int left_int = 0;
+    // int right_int = 4;
+
+    // while (left_int < right_int)
+    // {
+    //     if (v[left_int] == 1 && v[right_int] == 0)
+    //     {
+    //         v[left_int] = 0;
+    //         v[right_int] = 1;
+    //         left_int++;
+    //         right_int--;
+    //     }
+    //     if (v[right_int] == 1)
+    //     {
+    //         right_int--;
+    //     }
+    //     if (v[left_int] == 0)
+    //     {
+    //         left_int++;
+    //     }
+    // }
+    // for (int re : v)
+    // {
+    //     cout << re << " ";
+    // }
+    // cout << endl;
+
+    // SORT THE VALUE IN THAT WAY WHERE EVEN NO. SHOULD BE IN LEFT SIDE AND ODD SHOULD BE IN RIGHT SIDE.
+
+    vector<int> my_vec(4);
+
+    for (int i = 0; i < 4; i++)
     {
-        cin >> s_vec[i];
+        cin >> my_vec[i];
     }
-    bool sorted = true;
-    for (int i = 1; i < s_vec.size(); i++)
+    int left_int=0;
+    int righ_int = 4;
+
+
+    for (int i = 0; i < 4; i++)
     {
-        if (s_vec[i] <= s_vec[i - 1])
-        {
-            sorted = false;
-            break;
+        if(left_int<righ_int){
+            
         }
     }
-    cout << "result is : " << sorted << endl;
+    for (int rst : my_vec)
+    {
+        cout << rst << endl;
+    }
 
-    // vector<int> vec(6);
-    // int size = vec.size();
-    // for (int i = 0; i < size; i++) //WHEN SIZE DEFINE
-    // {
-    //     cin >> vec[i];
-    //     cout << "memory location of input : " << &vec[i] << endl;
-    // }
-
-    // for (int i = 0; i < vec.size(); i++)
-    // {
-    //     cout << "output : " << vec[i] << endl;
-    //     cout << "memory location of output : " << &vec[i] << endl;
-    // }
+    // SORT THE ARRAY WHICH IS IN NON-DECREASING ORDER IN THAT WAY
 
     return 0;
 }
